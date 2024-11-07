@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Contact - LightLens Studio</title>
+</head>
+<body>
+    <header>
+        <div class="logo">LightLens Studio</div>
+        <p>Mengabadikan Momen Indah dalam Setiap Jepretan</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="gallery.html">Galeri</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <section id="contact">
+        <h2>Hubungi Kamni</h2>
+        <form class="contact-form" id="contactForm" onsubmit="return validateForm(event)">
+            <div class="form-group">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" required>
+                <div class="error" id="nameError">Nama harus diisi</div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <div class="error" id="emailError">Email tidak valid</div>
+            </div>
+            <div class="form-group">
+                <label for="message">Pesan:</label>
+                <textarea id="message" rows="5" required></textarea>
+                <div class="error" id="messageError">Pesan harus diisi</div>
+            </div>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 LightLens Studio. All rights reserved.</p>
+</footer>
+
+    
+</body>
+</html>
